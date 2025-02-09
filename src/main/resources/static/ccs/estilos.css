@@ -1,12 +1,16 @@
-#titulo\000020principal{
+
+/*Selector de Id*/
+#tituloPrincipal{
         text-align: center;
         color:white;
         background: pink;
     
     }
+
     
+/*Selector de clases*/
 .parrafoVerde{
-        color:green;
+        color:purple;
         
         
         
@@ -19,3 +23,55 @@
     
     
     }
+    
+    
+    
+.ejemploPadding{
+    /*Padding a los 4 lados */
+    padding:10px;
+    /*Arriba/Abajo - Izquierda/Derecha */
+    padding:10px 20px;
+    /*Arriba -IzquierdaDerecha -Abajo */
+    padding:10px 20px 30px;
+     /*Arriba - Derecha -Abajo -Izquierda*/
+    padding:10px 20px 30px 40px;
+    
+    margin-bottom: 40px;
+    }
+
+    /*Selector de elementos Este es mas generico es para todo*/ 
+  /*  p,h1,div{ Aqui se pone a lo que se quiere aplicar
+       /* font-size:20px;  Nota parra aumentar la letra*/
+    /*   background-color: antiquewhite; Para ponerle un fondo
+        
+        }*/
+
+
+    
+/*Selector de elementos Este es mas especifico*/
+/*div.contenedor p.parrafoVerde { 
+    font-size: 50px;
+
+}*/
+/*Esto es para las anclas osea los enlaces*/
+a{ /*el a es de anclas osea de los enlaces*/
+    font-size: 20px;
+    
+}
+
+a:visited{/*Este es para cuando ya son visitados los enlaces el color sea green*/
+      color: green;
+    }
+
+a:hover {/*hover es cuando se pasa el mouse por encima va a tener este color */
+    
+    color: red;
+    transition: 1s;/*Es el tiempo que va a durar aplicando el estilo*/
+    }
+    
+    
+a:active {/*active es cuando yo mantengo un link presionado  */
+    
+    color: white;
+    background: black;
+    }   
